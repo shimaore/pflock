@@ -116,9 +116,18 @@ module.exports = function (instance) {
         if (attribute === 'value') {
             if (el.type === 'checkbox') {
                 el.checked = !!value;
-            } else {
-                el.value = value;
+                return;
             }
+            if (el.type === 'select-one') {
+                var index;
+                for( index = 0; index < el.options.length; index++ ) {
+                    if (el.options[index].value === value) {
+                        el.selectedIndex = index;
+                        return;
+                    }
+                }
+            }    
+            el.value = value;
         } else if(attribute === '') {
             if (el.innerHTML !== value) {
                 el.innerHTML = value;
