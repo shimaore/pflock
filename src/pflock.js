@@ -17,8 +17,6 @@ var defaults = {
         'read'
     ],
     plugins: [
-        './plugins/x-each',
-        './plugins/x-bind'
     ]
 };
 
@@ -47,6 +45,9 @@ function pflock (element, data, options) {
 
         dirty = false;
 
+
+    require('./plugins/x-each')(instance);
+    require('./plugins/x-bind')(instance);
 
     each(options.plugins, function (plugin) {
         require(plugin)(instance);
