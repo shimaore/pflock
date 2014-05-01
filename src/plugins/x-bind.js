@@ -1,8 +1,8 @@
-var each = require('foreach'),
-    attr = require('attr'),
-    event = require('event'),
+var each = require('../lib/foreach'),
+    attr = require('../lib/attr'),
+    event = require('component-event'),
     util = require('../util'),
-    jsonpointer = require('json-pointer');
+    jsonpointer = require('../lib/json-pointer');
 
 /**
  * Pflock plugin: provides x-bind syntax

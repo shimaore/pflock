@@ -1,6 +1,6 @@
 'use strict';
-var attr = require('attr'),
-    each = require('foreach');
+var attr = require('./lib/attr'),
+    each = require('./lib/foreach');
 
 module.exports = {
     getEventTarget:     getEventTarget,

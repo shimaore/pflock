@@ -1,8 +1,8 @@
 'use strict';
-var attr        = require('attr'),
-    each        = require('foreach'),
+var attr        = require('../lib/attr'),
+    each        = require('../lib/foreach'),
     util        = require('../util'),
-    jsonpointer = require('json-pointer');
+    jsonpointer = require('../lib/json-pointer');
 
 /**
  * Pflock plugin that provides the x-each syntax
