@@ -1,6 +1,6 @@
 'use strict';
 
-var each = require('foreach');
+var each = require('./foreach');
 module.exports = api;
 
 

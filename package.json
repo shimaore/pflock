@@ -1,6 +1,6 @@
 {
   "name": "pflock-browserify",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "author": "Stephane Alnet <stephane@shimaore.net>",
   "original-author": "Manuel Stofer <manuel@takimata.ch>",
   "dependencies": {
