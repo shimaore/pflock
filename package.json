@@ -1,14 +1,18 @@
 {
-    "name": "pflock",
-    "version": "0.6.1",
-    "author": "Manuel Stofer <manuel@takimata.ch>",
-    "devDependencies": {
-        "mocha": "1.9.0",
-        "chai": "*",
-        "component": "*",
-        "mocha-phantomjs": "*"
-    },
-    "scripts": {
-        "test": "make test"
-    }
+  "name": "pflock",
+  "version": "0.6.1",
+  "author": "Manuel Stofer <manuel@takimata.ch>",
+  "devDependencies": {
+    "mocha": "1.9.0",
+    "chai": "*",
+    "component": "*",
+    "mocha-phantomjs": "*"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "dependencies": {
+    "component-emitter": "^1.1.2",
+    "component-event": "^0.1.3"
+  }
 }
