@@ -64,8 +64,9 @@ function getQueryEngine (root) {
         };
     }
     return function (selector) {
+        var $ = require('jquery');
         return filterSamePflockRoot(
-            window.$(root).find(selector).get(),
+            $(root).find(selector).get(),
             root
         );
     };
